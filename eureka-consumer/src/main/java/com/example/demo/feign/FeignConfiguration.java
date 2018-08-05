@@ -25,6 +25,7 @@ public class FeignConfiguration {
     }
 
 
+    //@RequestLine
     //@Bean
     //public Contract feignContract(){
     //    return new feign.Contract.Default();

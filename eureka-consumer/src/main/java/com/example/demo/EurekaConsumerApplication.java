@@ -15,6 +15,7 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 public class EurekaConsumerApplication {
 
+
     @LoadBalanced
     @Bean
     public RestTemplate restTemplate(){

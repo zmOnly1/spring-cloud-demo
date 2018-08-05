@@ -1,0 +1,20 @@
+LoadBalancerClient
+LoadBalancerAutoConfiguration
+LoadBalancerInterceptor
+    RibbonLoadBalancerClient
+
+RibbonClientConfiguration
+    ILoadBalancer
+
+IRule
+
+FeignClientsConfiguration
+
+
+HystrixCircuitBreaker
+HystrixCircuitBreakerImpl
+
+当执行方法比较长时间的时候，信号量隔离：等方法执行完超时再返回
+commandProperties = @HystrixProperty(name = HystrixPropertiesManager.EXECUTION_ISOLATION_STRATEGY, value = "SEMAPHORE")
+
+线程池隔离：超过时间即刻返回不等方法执行完
