@@ -6,7 +6,7 @@ package com.example.guice;
 public class Configuration {
 
     public static MyApplet getMainApplet() {
-        return new StringWritingApplet(new PrintStringWriter(System.out), new StringProvider() {
+        return new StringWritingApplet(new PrintStreamWriter(System.out), new StringProvider() {
             @Override
             public String get() {
                 return "Hello World!";

@@ -1,15 +1,17 @@
 package com.example.guice;
 
+import javax.inject.Inject;
 import java.io.*;
 
 /**
  * Created by zm on 2018/8/18.
  */
-public class PrintStringWriter implements MyDestination {
+public class PrintStreamWriter implements MyDestination {
 
     private PrintStream destination;
 
-    public PrintStringWriter(PrintStream destination) {
+    @Inject
+    public PrintStreamWriter(PrintStream destination) {
         this.destination = destination;
     }
 
