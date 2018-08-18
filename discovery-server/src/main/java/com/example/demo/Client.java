@@ -1,4 +1,4 @@
-package com.example.discoveryclient;
+package com.example.demo;
 
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
