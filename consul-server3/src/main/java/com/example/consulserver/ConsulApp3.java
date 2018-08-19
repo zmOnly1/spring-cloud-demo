@@ -6,9 +6,9 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  
 @SpringBootApplication
 @EnableDiscoveryClient
-public class ConsulApp {
+public class ConsulApp3 {
 	
     public static void main( String[] args ) {
-    	SpringApplication.run(ConsulApp.class, args);
+    	SpringApplication.run(ConsulApp3.class, args);
     }
 }

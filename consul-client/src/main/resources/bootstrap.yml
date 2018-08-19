@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: prod
+  cloud:
+    consul:
+      config:
+        enabled: true
+        acl-token: xxxxx
+        prefix: sns
+        name: jarvis
+        format: key_value
+        watch:
+          enabled: true
+
+#配置路径
+#{name='sns/jarvis,prod/'}
+#{name='sns/jarvis/'}

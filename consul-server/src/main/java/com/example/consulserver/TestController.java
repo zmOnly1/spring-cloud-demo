@@ -11,15 +11,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 
+    private String consulServer = "Server1:";
+
     @RequestMapping("/home")
     public Object home() {
-        System.out.println("1111111111111");
-        return "OK11";
+        return consulServer + "OK11";
     }
 
     @GetMapping("/test1")
     public String test1() {
-        return "test11111";
+        return consulServer + "test11111";
     }
 
     @GetMapping("/test2")
@@ -29,7 +30,7 @@ public class TestController {
 
     @GetMapping("/param")
     public String test3(@RequestParam("param")String param) {
-        return "test11111" + param;
+        return consulServer + "test11111" + param;
     }
 
 }
